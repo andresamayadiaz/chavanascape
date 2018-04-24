@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+	<title>Biolab Disaster</title>
+	<link rel="Shortcut Icon" href="http://playbiolab.com/favicon.ico">
+	<style type="text/css">
+		body {
+			background-color: #25272b;
+			background-image: url(phobos.png);
+			background-position: 54px 105px;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			margin: 40px auto 60px auto;
+			width: 480px;
+			color: #fff;
+			font-family: helvetica, arial, sans-serif;
+			font-size: 11pt;
+			
+		}
+		
+		a {
+			color: #F47920;
+			text-decoration: none;
+		}
+		
+		a:hover {
+			color: #ff9536;
+			text-shadow: #F47920 0px 0px 2px;
+
+		}
+		
+		h1 {
+			font-size: 140%;
+			margin: 2.5em 0 0 0;
+		}
+		
+		h2 {
+			text-transform: uppercase;
+			margin: 20px 0 0 0;
+			font-size: 100%;
+		}
+		
+		img {
+			border: 0;
+		}
+		
+		dl.comp {
+			font-size: 9pt;
+		}
+
+		dl.comp dt {
+			font-weight: bold;
+			float: left;
+			display: block;
+			width: 14em;
+			text-align: right;
+			margin-right: 0.5em;
+		}
+		
+		dl.credits dt {
+			margin-top: 1em;
+		}
+
+		#canvas {
+			width: 480px;
+			height: 320px;
+			border: 1px solid #3b3d42;
+			image-rendering: optimizeSpeed;
+			-webkit-interpolation-mode: nearest-neighbor;
+		}
+		
+		#noCanvas {
+			padding: 90px 32px;
+			font-weight: bold;
+			border: 1px solid #3b3d42;
+			background-color: #000;
+		}
+		.ad {
+			margin: 0 0 32px -124px;
+		}
+		.made-with-impact {
+			text-align: right;
+			margin: 3em 0 2em 0;
+		}
+	</style>
+	<script type="text/javascript" src="lib/impact/impact.js"></script>
+	<script type="text/javascript" src="lib/game/biolab.js"></script>
+
+	<script type="text/javascript">
+		ig.module('main').requires('biolab.biolab').defines(function(){
+			BiolabGame.start();
+		});
+	</script>
+</head>
+<body>
+
+<div class="ad">
+<ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px"><iframe allowtransparency="true" hspace="0" marginwidth="0" marginheight="0" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){i+='.call';setTimeout(h,0)}else if(h.match){i+='.nav';w.location.replace(h)}s.log&amp;&amp;s.log.push(i)}" vspace="0" id="aswift_0" name="aswift_0" style="left: 0pt; position: absolute; top: 0pt;" frameborder="0" height="90" scrolling="no" width="728"></iframe></ins></ins>
+</div>
+
+<canvas height="320" width="480" id="canvas">
+	<div id="noCanvas">
+		<p>
+			Hey there, it looks like you're using Microsoft's Internet Explorer. Microsoft
+			hates the Web and doesn't support HTML5 :( 
+		</p>
+		<p>
+			To play this game you need a good Browser, like
+			<a href="http://www.opera.com/">Opera</a>,
+			<a href="http://www.google.com/chrome">Chrome</a>,
+			<a href="http://www.mozilla.com/firefox/">Firefox</a> or
+			<a href="http://www.apple.com/safari/">Safari</a>.
+		</p>
+	</div>
+</canvas>
+
+<p>
+	Jump: X, Shoot: C, Move: Arrow Keys
+	<iframe src="Biolab%20Disaster_files/like.html" style="border: medium none; overflow: hidden; width: 80px; height: 21px; float: right;" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+</p>
+
+<p class="made-with-impact">
+	<a href="http://impactjs.com/"><img src="Biolab%20Disaster_files/made-with-impact.png"></a>
+</p>
+
+
+
+<h1>So what's the deal?</h1>
+<p>
+	The game you (hopefully) see above is <strong>not</strong> done in Flash. It's pure HTML5 and Javascript. 
+	You don't need any Plugin to play, just a good Browser.
+</p>
+<p>
+	I made a short <a href="http://vimeo.com/14920760">making-of video</a> that explains some things and 
+	also shows the level editor in action. You can read some more technical details on my 
+	<a href="http://www.phoboslab.org/log/2010/09/biolab-disaster">blog</a>.
+</p>
+
+
+<h1>When will the engine and the level editor be released?</h1>
+<p>
+	The HTML5 Game Engine behind Biolab Disaster is now available at <a href="http://impactjs.com/">ImpactJS.com</a>. 
+	This also includes the Weltmeister Level Editor.
+</p>
+
+
+<h1>Credits:</h1>
+<dl class="credits">
+	<dt>Concept, Graphics &amp; Programming:</dt><dd><a href="http://www.phoboslab.org/">Dominic Szablewski</a></dd>
+	<dt>Music:</dt><dd><a href="http://www.no-fate.net/">Andreas L�sch</a></dd>
+	<dt>Title Image:</dt><dd>Used with permission from <a href="http://itchstudios.com/psg/">Niklas Jansson</a></dd>
+</dl>
+
+
+
+</body></html>
